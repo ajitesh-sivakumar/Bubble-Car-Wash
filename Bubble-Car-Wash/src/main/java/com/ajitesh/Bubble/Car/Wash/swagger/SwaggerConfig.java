@@ -18,12 +18,12 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
-	
+
 	public static final Contact DEFAULT_CONTACT= new Contact("Ajitesh K S","https://www.ajiteshsivakumar.in","iamajitesh@ajiteshsivakumar.in");
 	static List<VendorExtension> vendorExtension = new ArrayList();
 	public static final ApiInfo DEFAULT_API_INFO = new ApiInfo("Bubble Car Wash", "BCW Docs", "1.1", "urn:toc", DEFAULT_CONTACT, "Apache 2.0", "http://www.apache.org/licenses/LICENSE-2.0", vendorExtension);
 	static Logger logger = LogManager.getLogger(SwaggerConfig.class);
-	
+
 	@Bean
 	public Docket api() {
 		logger.info("Swagger Started");
